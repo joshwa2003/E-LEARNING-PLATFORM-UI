@@ -63,4 +63,34 @@ The platform demonstrates my ability to create scalable, maintainable code archi
 
 There's tremendous potential for future enhancements - integrating with backend APIs, implementing real-time chat functionality, adding video conferencing for live classes, creating mobile applications, implementing AI-powered course recommendations, or adding gamification elements. For now, I'm proud of creating a professional, feature-rich e-learning platform that showcases modern web development capabilities and provides an excellent foundation for a complete educational technology solution.
 
-### Output:
+### Output:<img width="1440" alt="Screenshot 2025-06-29 at 4 31 54 PM" src="https://github.com/user-attachments/assets/c44247aa-f418-439e-b95a-27cafb21972b" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 01 PM" src="https://github.com/user-attachments/assets/e0a77333-3c85-4cb9-ab90-eb265a2a001a" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 08 PM" src="https://github.com/user-attachments/assets/c78873fe-d527-47ec-92ff-8a03b0343f0e" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 15 PM" src="https://github.com/user-attachments/assets/3f2f630a-b8e6-440f-8eb1-59e26d449738" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 21 PM" src="https://github.com/user-attachments/assets/d31f43d0-3584-4d31-942a-23e22d32c428" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 28 PM" src="https://github.com/user-attachments/assets/ecaa4d44-3ec3-4cdd-a4b0-df46d6ca38e0" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 45 PM" src="https://github.com/user-attachments/assets/998a5bb0-87ec-4b65-b531-b793fc7adfdf" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 32 53 PM" src="https://github.com/user-attachments/assets/8bbbcb0b-b2ba-407b-9b38-10da2d9a1fd9" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 02 PM" src="https://github.com/user-attachments/assets/4b99a728-7a0e-46bd-a21b-b49af5b98b15" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 10 PM" src="https://github.com/user-attachments/assets/8c7004cd-c46f-4e1d-a5fb-75c0876d4ca1" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 16 PM" src="https://github.com/user-attachments/assets/2a238725-8839-40e7-89c8-8bb792de01b3" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 24 PM" src="https://github.com/user-attachments/assets/8862772e-9511-4915-87c2-eede6148c0fe" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 30 PM" src="https://github.com/user-attachments/assets/06d6ab3e-0503-4dd8-981f-d128b2b07479" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 36 PM" src="https://github.com/user-attachments/assets/b2edc718-fa49-452d-a58c-0605f5ecd87f" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 43 PM" src="https://github.com/user-attachments/assets/63f044ce-3c04-40ff-b1f4-30c91b74cee6" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 33 49 PM" src="https://github.com/user-attachments/assets/9c5633c0-fa8d-4481-8328-a20205f4de85" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 04 PM" src="https://github.com/user-attachments/assets/fadcad65-cf47-4e20-8f84-537e3509a36e" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 11 PM" src="https://github.com/user-attachments/assets/baeff76d-52ec-4079-83bb-fea0e5e25bdf" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 19 PM" src="https://github.com/user-attachments/assets/915c820e-288c-475e-b62f-5a132d703256" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 26 PM" src="https://github.com/user-attachments/assets/af6bb37d-f568-4acb-9c19-dad033f3703e" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 33 PM" src="https://github.com/user-attachments/assets/3189a473-e58c-4eb9-b1d2-c5179e08fe48" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 39 PM" src="https://github.com/user-attachments/assets/2aee4836-c421-4a5a-baf0-29100c452044" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 47 PM" src="https://github.com/user-attachments/assets/420697c6-1c1e-44ba-af3d-4d2e7970e51f" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 53 PM" src="https://github.com/user-attachments/assets/34da81d4-2306-461c-9153-fd7447591856" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 34 59 PM" src="https://github.com/user-attachments/assets/e952090b-14e5-493c-835d-69a725b74170" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 35 07 PM" src="https://github.com/user-attachments/assets/771bb411-9ebb-407e-8e65-969588bfe447" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 35 13 PM" src="https://github.com/user-attachments/assets/036d3b51-fb01-40f2-9184-d394e50db299" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 35 16 PM" src="https://github.com/user-attachments/assets/217c0fbf-d683-4cc4-a8e8-90a27d978b6b" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 35 18 PM" src="https://github.com/user-attachments/assets/3c7a092c-7e4b-41b6-8bca-8f0e8b45baf3" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 35 28 PM" src="https://github.com/user-attachments/assets/79d1c09c-a801-421e-948f-bc5a17d28ea6" />
+<img width="1440" alt="Screenshot 2025-06-29 at 4 31 22 PM" src="https://github.com/user-attachments/assets/ee643294-0847-4678-88dc-7c082c099716" />
