@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - JoshLearn</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .dashboard-container {
+            display: flex;
+            min-height: 100vh;
+            padding-top: 76px;
+            background-color: #f8f9fa;
+        }
+        
+        .dashboard-sidebar {
+            width: 280px;
+            position: fixed;
+            left: 0;
+            top: 76px;
+            height: calc(100vh - 76px);
+            overflow-y: auto;
+            background: white;
+            border-right: 1px solid #dee2e6;
+            z-index: 1000;
+            padding: 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 2rem;
+        }
+        
+        .sidebar-navigation .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            color: var(--dark-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-bottom: 4px;
+        }
+        
+        .sidebar-navigation .sidebar-link:hover {
+            background-color: rgba(67, 97, 238, 0.1);
+            color: var(--primary-color);
+        }
+        
+        .sidebar-navigation .sidebar-link.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .sidebar-navigation .sidebar-link i {
+            width: 20px;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        .sidebar-upgrade {
+            background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(67, 97, 238, 0.05));
+            border: 1px solid rgba(67, 97, 238, 0.2);
+        }
+
+        .calendar-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .event-time {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background: #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .calendar-day {
+            background: white;
+            padding: 1rem;
+            min-height: 100px;
+            position: relative;
+        }
+        
+        .calendar-day.other-month {
+            background: #f8f9fa;
+            color: #6c757d;
+        }
+        
+        .calendar-day.today {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .calendar-event {
+            background: var(--accent-color);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        
+        .upcoming-events {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>JoshLearn
+            </a>
+            
+            <div class="d-flex align-items-center">I will now create the other missing pages linked in the dashboard sidebar navigation for completeness:
+
+- schedule.html
+- certificates.html
+- messages.html
+- wishlist.html
+- settings.html
+
+Starting with schedule.html:
+
+<create_file>
+<path>schedule.html</path>
+<content><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schedule - JoshLearn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    /* Reuse dashboard styles */
+    .dashboard-container {
+      display: flex;
+      min-height: 100vh;
+      padding-top: 76px;
+      background-color: #f8f9fa;
+    }
+    .dashboard-sidebar {
+      width: 280px;
+      position: fixed;
+      left: 0;
+      top: 76px;
+      height: calc(100vh - 76px);
+      overflow-y: auto;
+      background: white;
+      border-right: 1px solid #dee2e6;
+      z-index: 1000;
+      padding: 1.5rem;
+    }
+    .main-content {
+      margin-left: 280px;
+      flex: 1;
+      padding: 2rem;
+    }
+    .sidebar-navigation .sidebar-link {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      color: var(--dark-color);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin-bottom: 4px;
+    }
+    .sidebar-navigation .sidebar-link:hover {
+      background-color: rgba(67, 97, 238, 0.1);
+      color: var(--primary-color);
+    }
+    .sidebar-navigation .sidebar-link.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    .sidebar-navigation .sidebar-link i {
+      width: 20px;
+      margin-right: 12px;
+      text-align: center;
+    }
+    .sidebar-upgrade {
+      background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(67, 97, 238, 0.05));
+      border: 1px solid rgba(67, 97, 238, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-graduation-cap me-2"></i>JoshLearn
+      </a>
+      <div class="d-flex align-items-center">
+        <div class="dropdown me-3">
+          <button class="btn btn-link text-dark position-relative" type="button" data-bs-toggle="dropdown">
+            <i class="fas fa-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">New course recommendation</a></li>
+            <li><a class="dropdown-item" href="#">Assignment due tomorrow</a></li>
+            <li><a class="dropdown-item" href="#">Course completion certificate</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-link text-dark d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+            <img src="https://via.placeholder.com/32x32" class="rounded-circle me-2" alt="Profile" />
+            <span>Joshwa</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Content -->
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="dashboard-sidebar">
+      <div class="sidebar-user mb-4 text-center">
+        <img src="https://placehold.co/100x100/4361ee/ffffff?text=JD" alt="User Avatar" class="rounded-circle mb-3" style="width: 80px; height: 80px" />
+        <h5 class="mb-1">Joshwa</h5>
+        <p class="text-muted mb-3">Web Development Student</p>
+        <div class="progress mb-2" style="height: 8px">
+          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <small class="text-muted">Overall Progress: 65%</small>
+      </div>
+
+      <div class="sidebar-navigation">
+        <a href="dashboard.html" class="sidebar-link">
+          <i class="fas fa-th-large"></i>
+          Dashboard
+        </a>
+        <a href="my-courses.html" class="sidebar-link">
+          <i class="fas fa-book"></i>
+          My Courses
+          <span class="badge bg-primary ms-auto">4</span>
+        </a>
+        <a href="schedule.html" class="sidebar-link active">
+          <i class="fas fa-calendar"></i>
+          Schedule
+          <span class="badge bg-warning ms-auto">2</span>
+        </a>
+        <a href="certificates.html" class="sidebar-link">
+          <i class="fas fa-certificate"></i>
+          Certificates
+        </a>
+        <a href="messages.html" class="sidebar-link">
+          <i class="fas fa-comments"></i>
+          Messages
+          <span class="badge bg-danger ms-auto">3</span>
+        </a>
+        <a href="wishlist.html" class="sidebar-link">
+          <i class="fas fa-heart"></i>
+          Wishlist
+        </a>
+        <a href="settings.html" class="sidebar-link">
+          <i class="fas fa-cog"></i>
+          Settings
+        </a>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="sidebar-upgrade p-3 bg-light rounded">
+        <h6 class="mb-3">Upgrade to Pro</h6>
+        <p class="text-muted small mb-3">Get access to premium courses and features</p>
+        <button class="btn btn-primary btn-sm w-100">Upgrade Now</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2 class="mb-4">Schedule</h2>
+      <p class="text-muted mb-4">View your upcoming live sessions, assignments, and events.</p>
+
+      <div class="list-group">
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="mb-1">Live Session: React Hooks</h5>
+            <small class="text-muted"><i class="fas fa-calendar me-1"></i>Tomorrow, 2:00 PM</small>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm">Join</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="mb-1">Assignment Due: Python Project</h5>
+            <small class="text-muted"><i class="fas fa-clock me-1"></i>2 days left</small>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm">Submit</a>
+        </div>
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="mb-1">Group Discussion: UI/UX Best Practices</h5>
+            <small class="text-muted"><i class="fas fa-calendar me-1"></i>Friday, 3:30 PM</small>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm">RSVP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
